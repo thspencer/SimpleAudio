@@ -29,7 +29,7 @@ use strict;
 use warnings;
 
 my $TITLE   = "SimpleAudio";
-my $VERSION = "0.1.1";
+my $VERSION = "0.1.2";
 my $USAGE   = "\tusage: $0 [input options] [output options]\n\tuse -h for full help\n";
 
 # Print script information header
@@ -78,7 +78,6 @@ unless ( $input_file ){
 # If no value given then use input filename and add new extension
 if ( !$output_file ){
   $output_file = "$input_file.$container";
-  #$output_file =~ s/(\.\w+)$/\.$file_format/; # change output file extension
 }
 
 # Probe input file
